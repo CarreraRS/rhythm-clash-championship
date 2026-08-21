@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bx60abwkp0hss"
+path="res://.godot/imported/DJ STOP & SCRATCH FREE SOUND EFFECT (SFX) 2025.mp3-fcf79af741652e41f1c81436cfbe04df.mp3str"
+
+[deps]
+
+source_file="res://Main/DJ STOP & SCRATCH FREE SOUND EFFECT (SFX) 2025.mp3"
+dest_files=["res://.godot/imported/DJ STOP & SCRATCH FREE SOUND EFFECT (SFX) 2025.mp3-fcf79af741652e41f1c81436cfbe04df.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

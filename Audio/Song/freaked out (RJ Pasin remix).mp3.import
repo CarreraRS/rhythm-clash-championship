@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cic3h4i5ktqq5"
+path="res://.godot/imported/freaked out (RJ Pasin remix).mp3-a77c2eb28ca402c084bf750c04f967a5.mp3str"
+
+[deps]
+
+source_file="res://Audio/Song/freaked out (RJ Pasin remix).mp3"
+dest_files=["res://.godot/imported/freaked out (RJ Pasin remix).mp3-a77c2eb28ca402c084bf750c04f967a5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

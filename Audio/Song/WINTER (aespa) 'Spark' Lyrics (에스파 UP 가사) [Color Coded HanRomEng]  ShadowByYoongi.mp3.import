@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ce1kgfeo7u6yl"
+path="res://.godot/imported/WINTER (aespa) 'Spark' Lyrics (에스파 UP 가사) [Color Coded HanRomEng]  ShadowByYoongi.mp3-1c48406f90f6077b941e84fbaf31e363.mp3str"
+
+[deps]
+
+source_file="res://Audio/Song/WINTER (aespa) 'Spark' Lyrics (에스파 UP 가사) [Color Coded HanRomEng]  ShadowByYoongi.mp3"
+dest_files=["res://.godot/imported/WINTER (aespa) 'Spark' Lyrics (에스파 UP 가사) [Color Coded HanRomEng]  ShadowByYoongi.mp3-1c48406f90f6077b941e84fbaf31e363.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

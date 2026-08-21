@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://e5t0np3hlrjf"]
+
+[ext_resource type="Script" uid="uid://bcolmbxu5rjpa" path="res://Main/GameOverUI.gd" id="1_dmu63"]
+[ext_resource type="AudioStream" uid="uid://bx60abwkp0hss" path="res://Main/DJ STOP & SCRATCH FREE SOUND EFFECT (SFX) 2025.mp3" id="2_lbsw1"]
+
+[node name="GameOverUI" type="CanvasLayer" unique_id=2081008715]
+script = ExtResource("1_dmu63")
+
+[node name="Control" type="Control" parent="." unique_id=1215983248]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1303966586]
+layout_mode = 0
+offset_right = 1924.0
+offset_bottom = 1073.0
+color = Color(0.18, 0.18, 0.18, 0.5647059)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=710000687]
+layout_mode = 0
+offset_left = 666.0
+offset_top = 311.0
+offset_right = 1251.0
+offset_bottom = 587.0
+
+[node name="TitleLabel" type="Label" parent="Control/VBoxContainer" unique_id=24367341]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 98
+text = "Game Over"
+
+[node name="ScoreLabel" type="Label" parent="Control/VBoxContainer" unique_id=1140041208]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 32
+
+[node name="RestartButton" type="Button" parent="Control/VBoxContainer" unique_id=916351181]
+layout_mode = 2
+text = "Restart"
+
+[node name="MenuButton" type="Button" parent="Control/VBoxContainer" unique_id=1395485790]
+layout_mode = 2
+text = "MainMenu"
+
+[node name="GameOverSound" type="AudioStreamPlayer" parent="Control" unique_id=789451902]
+stream = ExtResource("2_lbsw1")
+volume_db = -10.0

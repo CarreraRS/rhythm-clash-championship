@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://vrcm5whdwgee"]
+
+[ext_resource type="Script" uid="uid://bvn7vu225fg4m" path="res://beatmap_generator.gd" id="1_vgyol"]
+[ext_resource type="AudioStream" uid="uid://lqcnjaww3vng" path="res://Audio/Song/Hiroyuki SAWANO feat. XAIDARK ARIALyric Video from俺だけレベルアップな件.mp3" id="2_vgyol"]
+
+[node name="BeatmapMaker" type="Node" unique_id=1831895152]
+script = ExtResource("1_vgyol")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1491373633]
+stream = ExtResource("2_vgyol")
+volume_db = -11.2

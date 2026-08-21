@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bxkdr0tusqql0"]
+
+[ext_resource type="Script" uid="uid://oqsc5fnmupoh" path="res://Music/Conductor.gd" id="1_rbsp3"]
+[ext_resource type="AudioStream" uid="uid://ce1kgfeo7u6yl" path="res://Audio/Song/WINTER (aespa) 'Spark' Lyrics (에스파 UP 가사) [Color Coded HanRomEng]  ShadowByYoongi.mp3" id="2_qtvyw"]
+
+[node name="Conductor" type="Node" unique_id=1311836077]
+script = ExtResource("1_rbsp3")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=663696377]
+stream = ExtResource("2_qtvyw")

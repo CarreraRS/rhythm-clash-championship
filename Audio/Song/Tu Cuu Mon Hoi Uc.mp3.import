@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://jq3ha0rxofql"
+path="res://.godot/imported/Tu Cuu Mon Hoi Uc.mp3-631a3a0eec94f541c8d9d5ab5bce2cfb.mp3str"
+
+[deps]
+
+source_file="res://Audio/Song/Tu Cuu Mon Hoi Uc.mp3"
+dest_files=["res://.godot/imported/Tu Cuu Mon Hoi Uc.mp3-631a3a0eec94f541c8d9d5ab5bce2cfb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

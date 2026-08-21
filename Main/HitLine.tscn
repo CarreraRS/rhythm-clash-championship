@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cvixk7bgubnim"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtqeq"]
+size = Vector2(1913, 151)
+
+[node name="HitLine" type="Area2D" unique_id=1436420740]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1142168049]
+position = Vector2(960.5, 912.5)
+shape = SubResource("RectangleShape2D_wtqeq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1282006377]
+custom_minimum_size = Vector2(1913, 151)
+offset_left = 4.0
+offset_top = 834.0
+offset_right = 1917.0
+offset_bottom = 985.0
+color = Color(1, 1, 1, 0.23529412)

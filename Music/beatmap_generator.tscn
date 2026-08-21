@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://1eo83pwv48b6"]
+
+[ext_resource type="Script" uid="uid://bvn7vu225fg4m" path="res://beatmap_generator.gd" id="1_4fosd"]
+
+[node name="BeatmapGenerator" type="Node" unique_id=1442998648]
+script = ExtResource("1_4fosd")

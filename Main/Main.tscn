@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://nmssp26306aa"]
+
+[ext_resource type="Script" uid="uid://kysts05wb6ku" path="res://Main/Main.gd" id="1_ps1la"]
+[ext_resource type="PackedScene" uid="uid://bxkdr0tusqql0" path="res://Music/Conductor.tscn" id="2_6aewd"]
+[ext_resource type="PackedScene" uid="uid://cwa44wf3fonve" path="res://Main/TrackManager.tscn" id="3_u2i7p"]
+[ext_resource type="PackedScene" uid="uid://cbru0fa8aa4jn" path="res://Main/Note.tscn" id="4_ps1la"]
+[ext_resource type="PackedScene" uid="uid://e5t0np3hlrjf" path="res://Main/GameOverUI.tscn" id="5_6aewd"]
+[ext_resource type="PackedScene" uid="uid://c8m7x0mqpnarv" path="res://Main/PauseUI.tscn" id="6_u2i7p"]
+[ext_resource type="PackedScene" uid="uid://c6r0nsihko64s" path="res://Main/VictoryUI.tscn" id="7_hh5pf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtqeq"]
+bg_color = Color(0.8111818, 0.4623943, 0.70750195, 1)
+
+[node name="Main" type="Node" unique_id=185263875]
+script = ExtResource("1_ps1la")
+
+[node name="VideoBackground" type="VideoStreamPlayer" parent="." unique_id=847022574]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+volume_db = -80.0
+expand = true
+
+[node name="ImageBackground" type="TextureRect" parent="." unique_id=116909944]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 6
+
+[node name="Conductor" parent="." unique_id=1311836077 instance=ExtResource("2_6aewd")]
+
+[node name="TrackManager" parent="." unique_id=1126318209 node_paths=PackedStringArray("conductor") instance=ExtResource("3_u2i7p")]
+position = Vector2(-4, -905)
+conductor = NodePath("../Conductor")
+note_scene = ExtResource("4_ps1la")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1433930073]
+
+[node name="RatingLabel" type="Label" parent="CanvasLayer" unique_id=399471186]
+offset_left = 594.0
+offset_top = 163.0
+offset_right = 1260.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 48
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer" unique_id=368456078]
+offset_left = 1420.0
+offset_top = 973.0
+offset_right = 1548.0
+offset_bottom = 1040.0
+theme_override_font_sizes/font_size = 48
+text = "Score"
+
+[node name="MultiplierLabel" type="Label" parent="CanvasLayer" unique_id=35798135]
+offset_left = 898.0
+offset_top = 392.0
+offset_right = 955.0
+offset_bottom = 459.0
+theme_override_font_sizes/font_size = 48
+text = "X2"
+
+[node name="BonusLabel" type="Label" parent="CanvasLayer" unique_id=531049552]
+offset_left = 802.0
+offset_top = 315.0
+offset_right = 1069.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 72
+text = "999,999"
+
+[node name="HealthBar" type="ProgressBar" parent="CanvasLayer" unique_id=783516127]
+offset_left = 9.0
+offset_top = 984.0
+offset_right = 1197.0
+offset_bottom = 1024.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_wtqeq")
+max_value = 10.0
+value = 10.0
+
+[node name="TargetScoreLabel" type="Label" parent="CanvasLayer" unique_id=141807930]
+offset_left = 1698.0
+offset_top = 5.0
+offset_right = 1768.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 24
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1880964896]
+position = Vector2(957, 539)
+
+[node name="GameOverUI" parent="." unique_id=2081008715 instance=ExtResource("5_6aewd")]
+
+[node name="PauseUI" parent="." unique_id=1023543396 instance=ExtResource("6_u2i7p")]
+
+[node name="VictoryUI" parent="." unique_id=835702808 instance=ExtResource("7_hh5pf")]

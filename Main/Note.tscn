@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cbru0fa8aa4jn"]
+
+[ext_resource type="Script" uid="uid://by6bnqvete2t8" path="res://Main/Note.gd" id="1_oo6bk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtqeq"]
+size = Vector2(84, 85)
+
+[node name="Note" type="Area2D" unique_id=104888044]
+script = ExtResource("1_oo6bk")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=668672098]
+offset_left = -44.0
+offset_top = -45.0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.3158051, 0.17072603, 0.43497634, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2074154376]
+position = Vector2(-2, -2.5)
+shape = SubResource("RectangleShape2D_wtqeq")
+
+[node name="Label" type="Label" parent="." unique_id=1157202065]
+offset_left = -18.0
+offset_top = -38.0
+offset_right = 14.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 48
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=379428498]
+offset_top = -1.0
+offset_right = 40.0
+offset_bottom = 39.0
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

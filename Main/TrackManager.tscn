@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cwa44wf3fonve"]
+
+[ext_resource type="Script" uid="uid://b16k3u4oqa01i" path="res://Main/TrackManager.gd" id="1_b8bpk"]
+[ext_resource type="PackedScene" uid="uid://cvixk7bgubnim" path="res://Main/HitLine.tscn" id="1_l3qlb"]
+
+[node name="TrackManager" type="Node2D" unique_id=1126318209]
+script = ExtResource("1_b8bpk")
+
+[node name="Lanes" type="Node2D" parent="." unique_id=606843319]
+
+[node name="Lane1" type="Marker2D" parent="Lanes" unique_id=1612577812]
+position = Vector2(660, -100)
+
+[node name="Lane2" type="Marker2D" parent="Lanes" unique_id=561254454]
+position = Vector2(820, -100)
+
+[node name="Lane3" type="Marker2D" parent="Lanes" unique_id=921182397]
+position = Vector2(980, -100)
+
+[node name="Lane4" type="Marker2D" parent="Lanes" unique_id=980017252]
+position = Vector2(1140, -100)
+
+[node name="HitLine" parent="." unique_id=1436420740 instance=ExtResource("1_l3qlb")]
+position = Vector2(0, 900)
